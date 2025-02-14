@@ -1,0 +1,27 @@
+{
+  "name": "entertainmentone",
+  "version": "1.0.0",
+  "description": "EntertainmentOne website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "axios": "^0.21.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/entertainment-one.git"
+  },
+  "keywords": [
+    "gaming",
+    "tv shows",
+    "audiobooks",
+    "proxy"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
