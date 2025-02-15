@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const { exec } = require('child_process');
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -9,7 +10,7 @@ app.use(express.static(path.join(__dirname, 'assets')));
 
 // Route to serve the Template_Games.html file
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'src/assets/gamefiles/SPACEBAR CLICKER/index.html'));
+  res.sendFile(path.join(__dirname, 'src/assets/gamefiles/fnaf(scratch)/index.html'));
 });
 
 app.listen(port, () => {
@@ -71,7 +72,7 @@ app.listen(port, () => {
     setTimeout(() => {
       console.log(message);
     }, delay);
-    delay += 50; // 1 second delay between messages
+    delay += 20; // 0.02 second delay between messages
   });
 
   setTimeout(() => {
@@ -99,6 +100,10 @@ app.listen(port, () => {
    ░      ░   ░ ░   ░         ░     ░░   ░   ░        ░   ▒    ▒ ░   ░   ░ ░ ░      ░      ░      ░   ░ ░   ░      ░ ░ ░ ▒     ░   ░ ░    ░   
    ░  ░         ░             ░  ░   ░                    ░  ░ ░           ░        ░      ░  ░         ░              ░ ░           ░    ░  ░
    `);
-    }, 6000);
-  }, 6000);
+    }, 2000);
+  }, delay + 1000);
+
+  setTimeout(() => {
+    require('./assistant.js');
+  }, delay + 5000); // Adjust the delay to ensure it runs after all messages
 });

@@ -14,14 +14,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/entertainment-one.git"
+    "url": "https://github.com/ScreamingQQ/EntertainmentOne.git"
   },
   "keywords": [
     "gaming",
-    "tv shows",
-    "audiobooks",
-    "proxy"
+    "entertainment"
+
   ],
-  "author": "Your Name",
+  "author": "ScreamingQQ",
   "license": "MIT"
 }
